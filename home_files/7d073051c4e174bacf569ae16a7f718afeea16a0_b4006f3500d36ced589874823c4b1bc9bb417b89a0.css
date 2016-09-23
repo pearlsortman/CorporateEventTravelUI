@@ -1,0 +1,3124 @@
+/*
+assetUrl: /static/less/cnqr-view/manifest-home.less
+cachekilla on server: B4006F3500D36CED589874823C4B1BC9BB417B89A0
+created: 9/22/2016 8:04:10 AM
+utc: 9/22/2016 12:04:10 PM
+*/
+
+.search-widget {
+  /* Map radio buttons and content */
+}
+.search-widget.search-widget-flightTab .multisegsearch .flightseg {
+  border: solid 1px #7A89B1;
+  padding: 4px;
+}
+.search-widget.search-widget-flightTab #flighttype {
+  /*round trip, oneway, multiseg */
+  text-align: center;
+  margin: 3px 0 1px 0;
+}
+.search-widget.search-widget-flightTab #flighttype span {
+  vertical-align: 20%;
+}
+.search-widget.search-widget-flightTab .flightseg {
+  margin: 3px 0;
+}
+.search-widget.search-widget-flightTab .addremoveseg,
+.search-widget.search-widget-flightTab .addremoveseg:hover {
+  line-height: 2em;
+  text-decoration: none;
+  margin: 3px 0;
+}
+.search-widget.search-widget-flightTab .addremoveseg .addremovespan,
+.search-widget.search-widget-flightTab .addremoveseg:hover .addremovespan {
+  font-size: 14px;
+  font-weight: bold;
+}
+.search-widget.search-widget-flightTab .shoptypeoptions input,
+.search-widget.search-widget-flightTab .shoptypeoptions label {
+  float: left;
+}
+.search-widget.search-widget-flightTab .shoptypeoptions input {
+  margin: 3px 3px 0 4px;
+}
+.search-widget.search-widget-flightTab .shoptypeoptions label {
+  margin: 3px 0 2px 2px;
+}
+.search-widget.search-widget-flightTab #airlinechoose div {
+  background-color: #ffffff;
+  font-size: 10px;
+  margin: 0 0 -2px;
+}
+.search-widget.search-widget-flightTab #dd_airlines {
+  width: 200px;
+}
+.search-widget.search-widget-flightTab #airlinechoose,
+.search-widget.search-widget-flightTab #airlinechooselegend {
+  margin-left: 25px;
+  width: 200px;
+}
+.search-widget.search-widget-flightTab #airlinechoose {
+  border: solid 1px silver;
+  overflow: auto;
+}
+.search-widget.search-widget-flightTab #airlinechooselegend {
+  background-color: #ffffff;
+  border: solid 1px silver;
+  padding: 2px;
+  margin-top: 8px;
+}
+.search-widget.search-widget-flightTab .container-chart {
+  border: 1px solid #a6c4eb;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 0;
+  position: relative;
+  /* tooltip box default properties (hidden) */
+}
+.search-widget.search-widget-flightTab .container-chart:before,
+.search-widget.search-widget-flightTab .container-chart:after {
+  content: " ";
+  display: table;
+}
+.search-widget.search-widget-flightTab .container-chart:after {
+  clear: both;
+}
+.search-widget.search-widget-flightTab .container-chart .container-load-message {
+  margin-top: 0;
+  text-align: center;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  color: #333333;
+  font: 8pt arial, verdana;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #c7c6c6;
+  padding: 5px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  z-index: 10000;
+}
+.search-widget.search-widget-flightTab .container-chart .container-load-message-225px {
+  margin-top: 0;
+  text-align: center;
+  left: 50%;
+  margin-left: -115px;
+  position: absolute;
+  color: #333333;
+  font: 8pt arial, verdana;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #c7c6c6;
+  width: 215px;
+  height: 35px;
+  padding: 5px 5px 5px 5px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  z-index: 10000;
+}
+.search-widget.search-widget-flightTab .container-chart .width-225px-nopadding {
+  width: 225px;
+}
+.search-widget.search-widget-flightTab .container-chart .container-nonstop {
+  width: 100%;
+  /*width: 305px;*/
+  height: 15px;
+  vertical-align: middle;
+  border-bottom: 3px solid #ffffff;
+  /* use #c7c6c6 for gray bar */
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.search-widget.search-widget-flightTab .container-chart .container-nonstop table {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.search-widget.search-widget-flightTab .container-chart .container-nonstop table td {
+  padding: 0 1px 0 0;
+}
+.search-widget.search-widget-flightTab .container-chart .container-nonstop table td span.timeslice {
+  background: #e2e3e3 url('/static/images/sprite-flightgraph-20150617.png') 0 0;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+}
+.search-widget.search-widget-flightTab .container-chart .container-nonstop table td span.timeslice.active {
+  background: #46912f url('/static/images/sprite-flightgraph-20150617.png') 0 -12px;
+  cursor: pointer;
+}
+.search-widget.search-widget-flightTab .container-chart .container-nonstop table td div {
+  display: hidden;
+  position: absolute;
+  padding: 0 5px;
+  margin: 0;
+  border: 1px solid #b5d2e7;
+  background: #fdfefe;
+  font-face: arial, verdana;
+  font-size: 8pt;
+  font-weight: normal;
+  color: #3c77d5;
+  top: 20px;
+  border-radius: 8px;
+  z-index: 10000;
+  text-align: left;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks {
+  width: 100%;
+  line-height: 5px;
+  vertical-align: middle;
+  background-color: #ffffff;
+  margin: 5px auto 0 auto;
+  text-align: center;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul {
+  height: 5px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  text-align: center;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul li {
+  display: inline-block;
+  float: left;
+  color: #000000;
+  width: 6px;
+  min-height: 5px;
+  padding: 0;
+  margin: 0;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul li.box-tickmark {
+  width: 6px;
+  margin-left: #749af5;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul li.box-tickmark-small {
+  color: #000000;
+  background: url('/static/images/sprite-flightgraph-20150617.png') 0 -28px;
+  width: 6px;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul li.box-tickmark-left {
+  color: #000000;
+  background: url('/static/images/sprite-flightgraph-20150617.png') -2px -24px;
+  width: 5px;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul li.box-tickmark-right {
+  color: #000000;
+  background: url('/static/images/sprite-flightgraph-20150617.png') 2px -24px;
+  width: 5px;
+}
+.search-widget.search-widget-flightTab .container-chart .container-tickmarks ul li.box-tickmark-center {
+  color: #000000;
+  background: url('/static/images/sprite-flightgraph-20150617.png') 0 -24px;
+  width: 6px;
+}
+.search-widget.search-widget-flightTab .container-chart .container-time-label {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  font: arial, verdana;
+  font-size: 6pt;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+}
+.search-widget.search-widget-flightTab .container-chart .container-time-label td {
+  padding: 0;
+  margin: 0;
+  font-size: 6pt;
+  vertical-align: top;
+}
+.search-widget.search-widget-flightTab .container-chart .container-time-label td.container-time-label-col1 {
+  text-align: left;
+  width: 25%;
+}
+.search-widget.search-widget-flightTab .container-chart .container-time-label td.container-time-label-col2 {
+  text-align: center;
+  width: 50%;
+}
+.search-widget.search-widget-flightTab .container-chart .container-time-label td.container-time-label-col3 {
+  text-align: right;
+  width: 25%;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon {
+  top: 30px;
+  display: hidden;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #83827e;
+  color: #767676;
+  background: #ffffff;
+  /* css3 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*position*/
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  /* value = - border-top-width - border-bottom-width */
+  left: 40px;
+  /* controls horizontal position */
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #b5d2e7 transparent;
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon:after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  /* value = - border-top-width - border-bottom-width */
+  left: 40px;
+  /* value = (:before left) + (:before border-left) - (:after border-left) */
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon.top {
+  z-index: 1070;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon.top:before {
+  top: -11px;
+  /* value = - border-top-width - border-bottom-width */
+  bottom: auto;
+  left: auto;
+  right: 50px;
+  /* controls horizontal position */
+  border-width: 0 10px 10px;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon.top:after {
+  top: -10px;
+  /* value = - border-top-width - border-bottom-width */
+  bottom: auto;
+  left: auto;
+  right: 50px;
+  /* controls horizontal position */
+  border-width: 0 10px 10px;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon p {
+  font-size: 7pt;
+  color: #3c77d5;
+  line-height: 140%;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon .tooltip-hr {
+  border: 0 0 1px 0;
+  border-style: dashed;
+  width: 90%;
+  text-align: left;
+  color: #c5d3ed;
+  background-color: #c5d3ed;
+  height: 0;
+  margin: 2px 0;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-balloon .flightHeader {
+  font-weight: bold;
+}
+.search-widget.search-widget-flightTab .container-chart .nonstop-tooltip {
+  width: 120px;
+  /* remove to make the box auto-size */
+  margin-left: -60px;
+  /* half of width specified */
+  display: none;
+  padding: 5px 5px;
+  margin-top: 20px;
+  text-align: left;
+  /*top: auto;*/
+  bottom: auto;
+  z-index: 1070;
+}
+.search-widget.search-widget-flightTab #flexfaretext {
+  padding-top: 3px;
+  font-weight: bold;
+}
+.search-widget.search-widget-flightTab .expander {
+  color: #1e69a6;
+  font: normal normal normal 16px/10px 'concur-icons';
+  display: block;
+  margin-top: 5px;
+}
+.search-widget.search-widget-flightTab .expander:link,
+.search-widget.search-widget-flightTab .expander:hover,
+.search-widget.search-widget-flightTab .expander:active {
+  text-decoration: none;
+}
+.search-widget.search-widget-flightTab .expander .expander-closed:before {
+  content: "\e02e";
+}
+.search-widget.search-widget-flightTab .expander .expander-opened:before {
+  content: "\e02b";
+}
+.search-widget.search-widget-carTab #carsearchtable {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+}
+.search-widget.search-widget-carTab .carradiodiv {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.search-widget.search-widget-carTab .car_iata {
+  width: 100%;
+}
+.search-widget.search-widget-carTab .offairportcar {
+  background-color: transparent;
+  width: 230px;
+  border: solid 1px silver;
+  cursor: default;
+}
+.search-widget.search-widget-carTab #carDropoffsection {
+  margin-top: 10px;
+  display: none;
+}
+.search-widget.search-widget-carTab .handle {
+  color: #000000;
+  font: normal normal normal 16px/10px 'concur-icons';
+}
+.search-widget.search-widget-carTab .handle.handle-expand:before {
+  content: "\e028";
+}
+.search-widget.search-widget-carTab .handle.handle-collapse:before {
+  content: "\e029";
+}
+.search-widget.search-widget-carTab #advancedcaroptions {
+  margin: 5px 0 0 0;
+}
+.search-widget.search-widget-carTab .showhide {
+  margin-top: 8px;
+  display: block;
+  text-decoration: none;
+}
+.search-widget.search-widget-railTab #searchOnDBButton {
+  padding-bottom: 20px;
+}
+.search-widget.search-widget-railTab #viaRailButtonContainer {
+  padding-bottom: 20px;
+}
+.search-widget.search-widget-railTab .note {
+  float: left;
+  padding-top: 20px;
+  color: #72777b;
+  font-style: normal;
+}
+.search-widget.search-widget-railTab .railstationblock {
+  position: relative;
+  width: 98%;
+  float: left;
+  margin-right: 2px;
+  margin-top: 4px;
+}
+.search-widget.search-widget-railTab .railstationblock input {
+  width: 100%;
+}
+.search-widget.search-widget-railTab #railtype {
+  /*round trip, oneway, multiseg */
+  width: 99%;
+  text-align: center;
+  margin: 3px 0 1px 0;
+}
+.search-widget.search-widget-railTab .railtype-viarail {
+  background: transparent url("/static/images/sprite-rail-logo-20150722.png") 0 -148px;
+  height: 62px;
+  width: 150px;
+  margin: 0 auto;
+}
+.search-widget.search-widget-railTab .railtype-BIBE {
+  background: transparent url("/static/images/sprite-rail-logo-20150722.png") 0 -1px;
+  height: 138px;
+  width: 150px;
+  margin: 0 auto;
+}
+.search-widget.search-widget-railTab .railtype-Evolvi {
+  background: transparent url("/static/images/sprite-rail-logo-20150722.png") 0 -220px;
+  height: 60px;
+  width: 150px;
+  margin: 0 auto;
+}
+.search-widget.search-widget-railTab #railShopTypeDiv input {
+  margin: 3px 3px 0 4px;
+}
+.search-widget.search-widget-railTab #SNCFPromoFaresDiv #SNCF_PromoCode {
+  margin-top: 2px;
+  width: 200px;
+}
+.search-widget.search-widget-railTab #SNCFPromoFaresDiv .sncfRadio {
+  margin: 0;
+}
+.search-widget h3 {
+  display: none;
+}
+.search-widget label {
+  margin-bottom: 0;
+}
+.search-widget .autocomplete {
+  width: 100%;
+}
+.search-widget .airportblock {
+  margin-top: 4px;
+}
+.search-widget .airportblock .labelblock a {
+  margin-left: 0;
+}
+.search-widget .airportblock input {
+  width: 100%;
+}
+.search-widget .mapformdatadiv {
+  margin: 6px 0;
+  position: relative;
+}
+.search-widget .mapcontentdiv {
+  margin: 6px 0 0 0;
+}
+.search-widget #flight-show-more {
+  background-color: #c0c2c4;
+  padding: 4px;
+  margin: 16px -8px -20px -8px;
+  text-align: center;
+  display: none;
+}
+.search-widget #creditCardSection label {
+  display: inline;
+}
+.search-widget #frmCardNumber {
+  margin-bottom: 8px;
+  max-width: 250px;
+}
+.search-widget .cCardForm {
+  background-color: #f9f9f9;
+  margin-right: 10px;
+  padding: 0px 10px 10px 10px;
+}
+.search-widget .cCardForm span {
+  margin-right: 8px;
+}
+.search-widget .cCardForm input {
+  margin-right: 4px;
+}
+.search-widget .cCardForm .divrow {
+  padding-top: 10px;
+}
+.cnqr-theme-11 {
+  /* In popup help for the search widget so placing this here even though its a separate container*/
+}
+.cnqr-theme-11 .search-widget {
+  font-size: 11px;
+  color: #333333;
+  /* Travel Manager / GSA */
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab #flighttype {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab .airportblock {
+  margin-right: 0;
+  width: 100%;
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab #airlinechooselegend {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab .container-chart {
+  width: auto;
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab .container-chart .width-225px-nopadding {
+  width: 100%;
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab .container-chart .container-load-message {
+  margin-left: 0;
+  width: auto;
+}
+.cnqr-theme-11 .search-widget.search-widget-flightTab .addremoveseg .addremovespan,
+.cnqr-theme-11 .search-widget.search-widget-flightTab .addremoveseg:hover .addremovespan {
+  font-weight: normal;
+}
+.cnqr-theme-11 .search-widget.search-widget-hotelTab .hotelsearchcontents .inner {
+  padding: 8px 0 0 0;
+  border: 0;
+}
+.cnqr-theme-11 .search-widget.search-widget-hotelTab .hotelsearchcontents .inner fieldset.cnqr-muted {
+  margin: 8px 0;
+}
+.cnqr-theme-11 .search-widget.search-widget-railTab #railtype {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.cnqr-theme-11 .search-widget.search-widget-railTab .railstationblock {
+  margin-right: 0;
+  width: 100%;
+}
+.cnqr-theme-11 .search-widget.search-widget-railTab input[type="radio"] {
+  vertical-align: 0px;
+}
+.cnqr-theme-11 .search-widget .button-container {
+  margin-bottom: 8px;
+}
+.cnqr-theme-11 .search-widget fieldset {
+  background-color: #f9f9f9;
+}
+.cnqr-theme-11 .search-widget fieldset legend {
+  font-size: 11px;
+}
+.cnqr-theme-11 .search-widget fieldset.cnqr-fieldset,
+.cnqr-theme-11 .search-widget fieldset.cnqr-muted {
+  background-color: transparent;
+}
+.cnqr-theme-11 .search-widget fieldset.cnqr-muted {
+  padding: 0;
+}
+.cnqr-theme-11 .search-widget h3 {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.cnqr-theme-11 .search-widget .mapformdatadiv {
+  margin: 6px 0;
+  padding: 0;
+}
+.cnqr-theme-11 .search-widget.cnqr-delay-reveal-container .cnqr-delay-reveal {
+  display: none !important;
+}
+.cnqr-theme-11 .search-widget.cnqr-delay-reveal-container #flight-show-more {
+  display: block;
+}
+.cnqr-theme-11 .search-widget #fieldset_tm_auth {
+  background-color: #FFFFFF;
+  padding: 5px;
+  margin: 20px 0 8px 10px;
+}
+.cnqr-theme-11 .search-widget #fieldset_tm_auth legend {
+  font-weight: bold;
+}
+.cnqr-theme-11 .search-widget #fieldset_tm_auth select {
+  margin-left: 20px;
+  width: 290px;
+}
+.cnqr-theme-11 .search-widget div.dutystation {
+  margin-top: 12px;
+  border-top: 1px solid #c0c2c4;
+}
+.cnqr-theme-11 .search-widget fieldset.dutystation {
+  margin-top: 30px;
+  padding: 5px;
+  background-color: #e2e3e3;
+}
+.cnqr-theme-11 .search-widget fieldset.dutystation legend {
+  font-weight: bold;
+}
+.cnqr-theme-11 .search-widget fieldset.dutystation div.mapreferencepoint input {
+  width: 86%;
+}
+.cnqr-theme-11 .cnqr-travelwidget {
+  padding: 1px;
+  border: 1px solid #c0c2c4;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  /* Travel Manager / GSA */
+}
+.cnqr-theme-11 .cnqr-travelwidget .VirtualAgentDiv {
+  padding: 8px;
+  margin: 0;
+}
+.cnqr-theme-11 .cnqr-travelwidget .cnqr-for-guest {
+  padding: 8px 8px 10.66666667px 8px;
+}
+.cnqr-theme-11 .cnqr-travelwidget .cnqr-for-guest .icon-user,
+.cnqr-theme-11 .cnqr-travelwidget .cnqr-for-guest .icon-user-admin {
+  color: #50565c;
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+}
+.cnqr-theme-11 .cnqr-travelwidget .cnqr-for-guest .icon-user-admin {
+  color: #c84f2e;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab {
+  border-bottom: 0;
+  top: 0;
+  margin: 1px 0 -1px 0;
+  padding: 0;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li.first {
+  margin-left: 0px;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a {
+  top: 0;
+  font-size: .000001px;
+  padding: 0;
+  color: #000000;
+  background-color: transparent;
+  border-bottom: 1px solid #e2e3e3;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.activetab {
+  border: 1px solid #e2e3e3;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.activetab:after {
+  color: #333333;
+  background-color: #e2e3e3;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.activetab:hover:after {
+  color: #333333;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a:hover:after {
+  color: #2379bf;
+  background-color: #e2e3e3;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a:after {
+  font-size: 20px;
+  font-family: 'concur-icons';
+  padding: 9px 10px 8px 10px;
+  background-color: #f9f9f9;
+  color: #1e69a6;
+  display: block;
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.flight-tab:after {
+  content: "\e008";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.flight-rail-tab:after {
+  content: "\e009";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.car-tab:after {
+  content: "\e00b";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.hotel-tab:after {
+  content: "\e00a";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.limo-tab:after {
+  content: "\e00c";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.taxi-tab:after {
+  content: "\e00c";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.rail-tab:after {
+  content: "\e00e";
+}
+.cnqr-theme-11 .cnqr-travelwidget ul.ottab li a.schedule-flight-tab:after {
+  content: "\e010";
+}
+.cnqr-theme-11 .cnqr-travelwidget .tabcontent {
+  margin-bottom: 0;
+}
+.cnqr-theme-11 .cnqr-travelwidget .tabcontent .tabcontent-inner {
+  margin: 8px;
+}
+.cnqr-theme-11 .cnqr-travelwidget #fieldset_tm_cross_fund {
+  background-color: #ffffff;
+  margin-top: 24px;
+}
+.cnqr-theme-11 .cnqr-travelwidget #fieldset_tm_cross_fund legend {
+  margin-left: 10px;
+}
+.cnqr-theme-11 .cnqr-travelwidget #fieldset_tm_cross_fund select {
+  width: 70%;
+}
+.cnqr-theme-11 .cnqr-travelwidget #fieldset_tm_auth {
+  background-color: #ffffff;
+  border: 0;
+  margin: 30px 0 8px 5px;
+}
+.cnqr-theme-11 .cnqr-travelwidget #fieldset_tm_auth legend {
+  margin-left: 5px;
+}
+.cnqr-theme-11 .cnqr-travelwidget #fieldset_tm_auth select {
+  margin-top: 3px;
+}
+.cnqr-theme-11 .cnqr-travelwidget .hr-tm-auth {
+  width: 300px;
+  margin: 10px 0 25px 10px;
+}
+.cnqr-theme-11 .otpopupdiv .popuphelp span.cnqr-frequent-flyer-pref,
+.cnqr-theme-11 .otpopupdiv .popuphelp span.cnqr-major-vendor {
+  color: #000000;
+}
+.VirtualAgentDiv {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  PADDING: 0px 0px 8px 0px;
+}
+.VirtualAgentTd1 {
+  width: 80%;
+}
+.VirtualAgentTd2 {
+  width: 19%;
+  vertical-align: central;
+}
+.inputVirtualAgentQuery {
+  width: 99%;
+}
+.btnVirtualAgentQuery {
+  width: 99%;
+}
+.VirtualAgentQueryResultDiv {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.VirtualAgentQueryResultDiv Div {
+  margin-bottom: 6px;
+}
+.VirtualAgentContinueTxt {
+  margin-top: 18px;
+}
+.gdsnews {
+  margin: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
+.gdsnews .news-headline {
+  padding: 5px 5px 0 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.gdsnews.news-alert,
+.gdsnews.news-warning {
+  background-color: #50565c;
+  color: #ffffff;
+}
+.gdsnews.news-alert .news-headline,
+.gdsnews.news-warning .news-headline {
+  background-repeat: no-repeat;
+  background-position: 5px 6px;
+}
+.gdsnews.news-alert {
+  border-color: red;
+}
+.gdsnews.news-alert .news-headline {
+  background-image: url("/static/images/legacy/StopIcon.gif");
+}
+.gdsnews.news-warning {
+  border-color: yellow;
+}
+.gdsnews.news-warning .news-headline {
+  background-image: url("/static/images/legacy/warning.gif");
+}
+.gdsnews .news-body {
+  padding: 5px;
+}
+.cnqr-theme-11 .gdsnews {
+  margin: 8px;
+}
+.cnqr-theme-11 .gdsnews .news-headline {
+  padding-left: 5px;
+}
+.cnqr-theme-11 .gdsnews.news-alert,
+.cnqr-theme-11 .gdsnews.news-warning {
+  background-color: #50565c;
+  color: #ffffff;
+}
+.cnqr-theme-11 .gdsnews.news-alert .news-headline,
+.cnqr-theme-11 .gdsnews.news-warning .news-headline {
+  background-image: none;
+}
+.cnqr-theme-11 .gdsnews.news-alert {
+  background-color: #f6e2e2;
+  color: #ca202c;
+  border-color: #ebccd1;
+}
+.cnqr-theme-11 .gdsnews.news-alert .news-headline {
+  position: relative;
+  padding-left: 25px;
+}
+.cnqr-theme-11 .gdsnews.news-alert .news-headline:before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 5px;
+  font-family: 'concur-icons';
+  content: "\e024";
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  background-color: #ca202c;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.cnqr-theme-11 .gdsnews.news-warning {
+  background-color: #fcf8e3;
+  color: #9e6600;
+  border-color: #faebcc;
+}
+.cnqr-theme-11 .gdsnews.news-warning .news-headline {
+  position: relative;
+  padding-left: 25px;
+}
+.cnqr-theme-11 .gdsnews.news-warning .news-headline:before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 5px;
+  background: transparent url("/static/images/state-warning-16-20160414.png") no-repeat;
+  content: '';
+}
+#tabgroup_travel_alerts ul {
+  border: 0;
+}
+#tabgroup_travel_alerts ul li {
+  display: none;
+}
+#tabgroup_travel_alerts ul li.first {
+  display: block;
+  float: none;
+  margin: 0;
+}
+#tabgroup_travel_alerts ul.ottab {
+  padding: 0 !important;
+}
+#tabgroup_travel_alerts ul.ottab a.activetab {
+  background-color: #FFD871;
+  display: block;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #BECCD9;
+  border-bottom: 1px solid #9CBDEF;
+  top: 2px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 2px 1px 2px 5px;
+  cursor: default;
+}
+#tabgroup_travel_alerts div.tabcontent {
+  border: 1px solid #BECCD9;
+  border-top: 0;
+}
+#tabgroup_travel_alerts div.tabcontent-inner {
+  margin: 0;
+}
+#tabgroup_travel_alerts div.tabcontentmessage {
+  border: 0;
+  padding: 1px 5px 0 5px;
+}
+#TravelAlertsDiv #tripitalertdiv {
+  color: #ED7720;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+.travelalertdiv {
+  padding: 2px 0 4px 0;
+  border-bottom: 1px dotted silver;
+}
+.travelalertdiv .hotelbox {
+  border: 1px solid #999ca0;
+  display: block;
+}
+.travelalertdiv .hotelbox b {
+  background-color: #e2e3e3;
+  display: block;
+  float: left;
+  padding: 0 2px;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .ottab {
+  display: none;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts div.tabcontent {
+  margin-bottom: 0;
+  border: 1px solid #c0c2c4;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .travelalertdiv {
+  padding: 4px 0;
+  border-bottom: 1px solid #e2e3e3;
+  color: #333333;
+  position: relative;
+  padding-left: 20px;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .travelalertdiv:before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 0;
+  font-family: 'concur-icons';
+  content: "\e022";
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  background-color: #1e69a6;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .travelalertdiv.cnqr-critical-alert {
+  position: relative;
+  padding-left: 20px;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .travelalertdiv.cnqr-critical-alert:before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 0;
+  font-family: 'concur-icons';
+  content: "\e024";
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1;
+  background-color: #ca202c;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .travelalertdiv span {
+  padding-left: 0!important;
+}
+.cnqr-theme-11 #tabgroup_travel_alerts .travelalertdiv:last-child {
+  border-bottom: 0;
+}
+.cnqr-theme-11 #TravelAlertsDiv #tripitalertdiv {
+  color: #333333;
+}
+.cnqr-theme-11 #newcentercontent #tabgroup_travel_alerts {
+  margin-bottom: 8px;
+}
+.cnqr-theme-11 #newcentercontent #tabgroup_travel_alerts .ottab {
+  display: block;
+}
+.cnqr-theme-11 #newcentercontent #tabgroup_travel_alerts .ottab a.activetab {
+  background-color: #d9edf7;
+  color: #1e69a6;
+  font-family: "Helvetica Neue", Helvetica, 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  border-color: #bce8f1;
+  padding: 4px;
+}
+.cnqr-theme-11 #newcentercontent #tabgroup_travel_alerts div.tabcontent {
+  border-color: #bce8f1;
+}
+.cnqr-theme-11 #newcentercontent .travelalertdiv {
+  font-size: 13px;
+}
+#sidebar1 {
+  margin-left: 5px;
+}
+#sidebar1 hr {
+  border: 0;
+  color: silver;
+  background-color: silver;
+  height: 1px;
+}
+#sidebar1 table.cnqr-condensed {
+  width: 100%;
+  border-spacing: 0 0;
+}
+#sidebar1 table.cnqr-condensed td {
+  padding: 0;
+}
+#sidebar1 #sect_travelsearch .lefttabdiv {
+  margin-bottom: 0;
+}
+#sidebar1 #sect_travelsearch .lefttabdiv .tabcontent {
+  border-width: 0;
+}
+#sidebar1 div.govportal li {
+  padding-top: 5px;
+}
+#sidebar1 div.govportal li:last-child {
+  padding-bottom: 5px;
+}
+/* End main content blocks css */
+.mainbodytop {
+  position: relative;
+  width: 100%;
+  margin-right: 15px;
+}
+/* Travel Manager / GSA */
+#fieldset_tm_auth {
+  background-color: #f6f9ff;
+  border: solid 1px #99BBE8;
+  padding: 5px;
+  margin: 0;
+  margin-bottom: 8px;
+  width: 90%;
+}
+#fieldset_tm_auth legend {
+  font-weight: bold;
+}
+#fieldset_tm_auth select {
+  margin-left: 20px;
+  width: 290px;
+}
+fieldset.dutystation {
+  background-color: #FFFFE6;
+}
+div#sect_additionalinfo div.fieldgrouptablewrap {
+  padding-left: 10px;
+}
+.fieldgrouptablewrap {
+  margin: 0 -4px;
+}
+.fieldgrouptablewrap .reporttable {
+  border: 1px solid #ffffff;
+}
+/* End TravelManager / GSA */
+#CliqbookMapDiv.tabcontentmessage {
+  border: none;
+  padding: 0;
+}
+.labelblock a.tooltip {
+  margin-left: 5px;
+}
+td.alignright {
+  text-align: right;
+}
+div.group {
+  margin-top: 3px;
+  border: 1px solid #A4B1DD;
+}
+#mapframe {
+  padding: 0;
+  background-color: #ffffff;
+  width: 635px;
+  height: 435px;
+  overflow: hidden;
+}
+#mapframehead {
+  height: 22px;
+  text-align: left;
+}
+#mapframehead table {
+  width: 635px;
+}
+.railstationblock {
+  position: relative;
+  width: 98%;
+  float: left;
+  margin-right: 2px;
+  margin-top: 4px;
+}
+.railstationblock input {
+  width: 100%;
+}
+.tripdescription {
+  font-style: italic;
+}
+#mapinactive {
+  visibililty: hidden;
+  color: #df0000;
+  font-weight: bold;
+}
+/*
+These should be moved somewhere common
+*/
+.alerttext {
+  color: #df0000;
+  font-weight: bold;
+}
+.alerttext_508 {
+  color: #df0000;
+  font-weight: bold;
+  font-style: italic;
+}
+/********* car section **************/
+option.carinstruction {
+  color: navy;
+  font-weight: 600;
+}
+fieldset {
+  border-color: white;
+}
+/********* Flight Schedule/Status **************/
+.statusmain {
+  background-color: #ffffff;
+  width: 100%;
+}
+.flightinfoheader {
+  background-color: #ffffff;
+  border-bottom: solid 1px #A3B0DD;
+  font-weight: bold;
+}
+.flightinfoheader span {
+  font-weight: normal;
+}
+.schedulemaintable table {
+  border-bottom: solid 1px silver;
+  table-layout: fixed;
+}
+.statusbody {
+  background-color: #EFF2FB;
+  color: #3D55AB;
+}
+.fltsegouter {
+  border: solid 1px #A3B0DD;
+  background-color: #ffffff;
+}
+/* background/text color should match cliqerrordisplay in cliqbook */
+.statuserror {
+  background-color: #FFFFCC;
+  padding: 10px;
+  color: maroon;
+}
+.fltlegouter {
+  padding: 5px;
+}
+.fltlegdeparr {
+  font-weight: bold;
+}
+.statustimevariance {
+  font-style: italic;
+}
+.connectiondiv {
+  width: 98%;
+  text-align: center;
+  margin: 3px 0 3px 0;
+}
+.statuslegmessage {
+  font-weight: normal;
+  color: maroon;
+}
+.statusspacer {
+  background-color: #ECEEF8;
+  height: 3px;
+  font-size: 3px;
+}
+.segmentoption {
+  background-color: #ffffff;
+  border-bottom: solid 1px silver;
+  table-layout: fixed;
+}
+.flifobutton {
+  cursor: pointer;
+  cursor: hand;
+  text-align: center;
+}
+#uservar1,
+.uservar1 {
+  display: none;
+}
+.companytextdiv {
+  padding: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0 0 3px 0;
+  border: 1px solid #AAAACC;
+}
+#cnote_display {
+  font-family: Arial, helvetica, Sans-Serif;
+}
+#sect_CompanyNotes #cnote_display {
+  padding: 5px;
+}
+.travelHomeContainer {
+  margin-left: -5px;
+  width: 99%;
+}
+.travelHomeContainer > tbody > tr > td {
+  padding: 4px;
+}
+#mapwait {
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 631px;
+  height: 428px;
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+  border: solid 1px silver;
+}
+#mapwait #mapwaitdiv {
+  margin-top: 170px;
+}
+.railstationamtrak {
+  width: 100%;
+}
+.cnqr-theme-11 .cnqr-app-content {
+  /* CGE styles needed only for Portal page */
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 {
+  margin-left: 0;
+}
+.cnqr-theme-11 .cnqr-app-content div.govportal {
+  /* For CGE Table actions */
+}
+.cnqr-theme-11 .cnqr-app-content div.govportal div.portaltable_buttonbar {
+  background-color: #e2e3e3;
+  padding: 5px;
+}
+.cnqr-theme-11 .cnqr-app-content div.govportal div.portaltable_buttonbar button {
+  margin-left: 5px;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal {
+  font-size: 12px;
+  /* Special override rather than huge code forks not to draw tables in the panels */
+  /* Alerts are drawn in common code so rather than fork a bunch of places adjusting here*/
+  /* CGE Shortcuts section */
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal ul {
+  margin-left: 20px;
+  padding-left: 0;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal ul.customlink {
+  padding-bottom: 5px;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal ul.customlink li {
+  padding: 0;
+  margin: 0;
+  color: #1e69a6;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal .cnqr-panel-body table.reporttable {
+  border: 0;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal .cnqr-panel-body table.reporttable td {
+  border: 0;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal.tablediv {
+  margin-top: 25px;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal table.cgealerts td {
+  font-size: 13px;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal div.portalshortcut .heading {
+  font-weight: bold;
+  margin-top: 12px;
+}
+.cnqr-theme-11 .cnqr-app-content #sidebar1 div.govportal div.portalshortcut .heading.first {
+  margin-top: 0;
+}
+.cnqr-theme-11 .travelHomeContainer {
+  margin-left: 0;
+  width: 100%;
+}
+.cnqr-theme-11 .travelHomeContainer > tbody > tr > td {
+  padding: 0;
+}
+.cnqr-theme-11 #newcentercontent {
+  margin-left: 16px;
+  /* Overrides for CGE Portal */
+}
+.cnqr-theme-11 #newcentercontent #tabgroup_travel_alerts.govportal {
+  margin-bottom: 32px;
+}
+.cnqr-theme-11 #newcentercontent .newsandnotes.govportal {
+  /* Avoid scrollbar in Company Notes */
+}
+.cnqr-theme-11 #newcentercontent .newsandnotes.govportal #cnote_display {
+  max-width: none;
+}
+.cnqr-theme-11 #newcentercontent .newsandnotes.govportal .show-more {
+  border-top: none;
+}
+.cnqr-theme-11 #newcentercontent.govportal h2 {
+  margin-bottom: 10px;
+}
+.cnqr-theme-11 #newcentercontent #sect_Authorizations,
+.cnqr-theme-11 #newcentercontent #sect_Vouchers,
+.cnqr-theme-11 #newcentercontent #sect_UpcomingTrips {
+  margin-bottom: 32px;
+}
+.cnqr-theme-11 #newcentercontent.govportal td {
+  vertical-align: top;
+}
+.cnqr-theme-11 #CliqbookMapDiv .tabbackground {
+  background-color: transparent;
+}
+.cnqr-theme-11 #CliqbookMapDiv .tabbackground #mapframehead {
+  height: auto;
+  margin-bottom: 8px;
+}
+.cnqr-theme-11 #PolicyList {
+  background-color: transparent;
+  text-align: right;
+  padding: 4px 0;
+}
+.cnqr-theme-11 .cnqr-section.newsandnotes .fieldgroupRow {
+  max-width: 908px;
+}
+.cnqr-theme-11 #cnote_display,
+.cnqr-theme-11 .col-md-8 .cnqr-section.newsandnotes .fieldgroupRow,
+.cnqr-theme-11 #CompanyNotesDiv table {
+  overflow-x: hidden;
+  max-width: 578px;
+}
+@media (min-width: 1200px) {
+  .cnqr-theme-11 .cnqr-section.newsandnotes .fieldgroupRow {
+    max-width: 1128px;
+  }
+  .cnqr-theme-11 #cnote_display,
+  .cnqr-theme-11 .col-md-8 .cnqr-section.newsandnotes .fieldgroupRow,
+  .cnqr-theme-11 #CompanyNotesDiv table {
+    max-width: 798px;
+  }
+}
+.cnqr-mystats .carousel {
+  border: 1px solid #c0c2c4;
+  background-color: #ffffff;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer {
+  width: 50%;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer.cnqr-mystat-leftborder {
+  border-left: 1px solid #c0c2c4;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner {
+  position: relative;
+  width: 272px;
+  height: 132px;
+  overflow: hidden;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner .cnqr-stat-text {
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI Semibold", sans-serif;
+  color: #383f46;
+  font-size: 12px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner .stat-updated-date {
+  text-transform: uppercase;
+  position: absolute;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 {
+  background: url('/static/images/mystats/Travel1/bg_small.png?manualcachekilla=5') no-repeat 0px 30px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-label {
+  position: absolute;
+  left: 5px;
+  top: 66px;
+  line-height: 22px;
+  width: 130px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used {
+  position: absolute;
+  height: 101px;
+  top: 30px;
+  left: 171px;
+  background: url('/static/images/mystats/Travel1/circle_small.png?manualcachekilla=5') no-repeat 0px 0px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas {
+  width: 101px;
+  background-color: transparent;
+  background-image: none;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas.cnqr-bg-white {
+  background-color: white;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-number {
+  position: absolute;
+  line-height: 40px;
+  width: 40px;
+  left: 200px;
+  top: 50px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-label {
+  line-height: 20px;
+  left: 197px;
+  position: absolute;
+  top: 86px;
+  width: 48px;
+  text-transform: uppercase;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-updated-date {
+  left: 0;
+  top: 110px;
+  font-size: 8px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+  position: absolute;
+  text-align: center;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+  position: absolute;
+  text-transform: uppercase;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  position: absolute;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+  width: 100%;
+  position: absolute;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  text-shadow: 0px 0px 3px #666666, -1px -1px #666666, 1px 1px #666666;
+  filter: dropshadow(color=#666666, offx=2, offy=2);
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend.stat-zero-state,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend.stat-zero-state {
+  color: black;
+  text-shadow: none;
+  filter: none;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-gauge,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge {
+  background-color: white;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+  background-color: white;
+  position: absolute;
+  font-weight: bold;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+  background-image: -webkit-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: -moz-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: -ms-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: -o-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: linear-gradient(to bottom, #209cff 0, #1e69a6 100%);
+  border-bottom: 2px solid #1e69a6;
+  background-color: #1e69a6;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  background-image: -webkit-linear-gradient(left, #383f46 0%, #333333 100%);
+  background-image: -o-linear-gradient(left, #383f46 0%, #333333 100%);
+  background-image: linear-gradient(to right, #383f46 0%, #333333 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff383f46', endColorstr='#ff333333', GradientType=1);
+  border-bottom: 2px solid #383f46;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge-diff {
+  background-color: #F4A900;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+  top: 30px;
+  left: 174px;
+  line-height: 42px;
+  width: 85px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+  line-height: 18px;
+  top: 70px;
+  left: 170px;
+  width: 100px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  top: 40px;
+  width: 70px;
+  height: 72px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+  top: 46px;
+  line-height: 18px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+  width: 70px;
+  top: 112px;
+  font-size: 15px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year {
+  left: 10px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+  left: 100px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+  left: 10px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  left: 100px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-updated-date {
+  left: 178px;
+  top: 110px;
+  font-size: 8px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer {
+  background: url('/static/images/sprite-home-20150618.png') no-repeat 0 -126px;
+  text-align: left;
+  padding-bottom: 12px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer .stat-title {
+  background: #ffffff url('/static/images/sprite-home-20150618.png') no-repeat right -40px;
+  margin-left: 17px;
+  line-height: 30px;
+  padding-left: 8px;
+  padding-right: 50px;
+  display: inline-block;
+  font-weight: bold;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .cnqr-stat-text {
+  padding-bottom: 10px;
+  padding-left: 24px;
+  font-size: 12px;
+}
+.cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-source {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 8px;
+  padding-left: 26px;
+}
+.cnqr-mystats .carousel .carousel-control {
+  width: 18px;
+  padding-top: 65px;
+  font-size: 17px;
+}
+.cnqr-mystats .carousel .carousel-indicators {
+  bottom: -30px;
+}
+.cnqr-mystats .carousel .carousel-indicators li {
+  border: 0;
+  height: 8px;
+  width: 8px;
+  background-color: #50565c;
+}
+.cnqr-mystats .carousel .carousel-indicators li.active {
+  margin: 1px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .carousel-control {
+  padding-top: 82px;
+  font-size: 20px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner {
+  height: 180px;
+  width: 360px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner .cnqr-stat-text {
+  font-size: 16px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 {
+  background: url('/static/images/mystats/Travel1/bg_large.png?manualcachekilla=5') no-repeat 0px 50px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-label {
+  position: absolute;
+  left: 4px;
+  top: 93px;
+  line-height: 28px;
+  width: 170px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used {
+  position: absolute;
+  height: 119px;
+  top: 50px;
+  left: 237px;
+  background: url('/static/images/mystats/Travel1/circle_large.png?manualcachekilla=5') no-repeat 0px 0px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas {
+  width: 119px;
+  background-color: transparent;
+  background-image: none;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas.cnqr-bg-white {
+  background-color: white;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-number {
+  position: absolute;
+  line-height: 55px;
+  width: 55px;
+  left: 270px;
+  top: 70px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-label {
+  position: absolute;
+  line-height: 26px;
+  left: 268px;
+  top: 120px;
+  width: 56px;
+  text-transform: uppercase;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-updated-date {
+  left: 0;
+  top: 150px;
+  font-size: 10px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+  position: absolute;
+  text-align: center;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+  position: absolute;
+  text-transform: uppercase;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  position: absolute;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+  width: 100%;
+  position: absolute;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  text-shadow: 0px 0px 3px #666666, -1px -1px #666666, 1px 1px #666666;
+  filter: dropshadow(color=#666666, offx=2, offy=2);
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend.stat-zero-state,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend.stat-zero-state {
+  color: black;
+  text-shadow: none;
+  filter: none;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-gauge,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge {
+  background-color: white;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+  background-color: white;
+  position: absolute;
+  font-weight: bold;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+  background-image: -webkit-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: -moz-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: -ms-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: -o-linear-gradient(top, #209cff 0, #1e69a6 100%);
+  background-image: linear-gradient(to bottom, #209cff 0, #1e69a6 100%);
+  border-bottom: 2px solid #1e69a6;
+  background-color: #1e69a6;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  background-image: -webkit-linear-gradient(left, #383f46 0%, #333333 100%);
+  background-image: -o-linear-gradient(left, #383f46 0%, #333333 100%);
+  background-image: linear-gradient(to right, #383f46 0%, #333333 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff383f46', endColorstr='#ff333333', GradientType=1);
+  border-bottom: 2px solid #383f46;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge-diff {
+  background-color: #F4A900;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+  top: 50px;
+  left: 240px;
+  line-height: 42px;
+  width: 120px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+  line-height: 18px;
+  top: 90px;
+  left: 240px;
+  width: 120px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  top: 60px;
+  width: 90px;
+  height: 98px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+  top: 68px;
+  line-height: 20px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+  width: 94px;
+  top: 155px;
+  font-size: 15px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year {
+  left: 10px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+  left: 130px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+  left: 10px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+  left: 130px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-updated-date {
+  left: 240px;
+  top: 150px;
+  font-size: 10px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer {
+  background: url('/static/images/sprite-home-20150618.png') no-repeat 0 -70px;
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 16px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer .stat-title {
+  background: #ffffff url('/static/images/sprite-home-20150618.png') no-repeat right 1px;
+  margin-left: 20px;
+  line-height: 40px;
+  padding-left: 13px;
+  font-size: 16px;
+  padding-right: 60px;
+  font-weight: bold;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .cnqr-stat-text {
+  padding-bottom: 15px;
+  padding-left: 32px;
+  font-size: 14px;
+}
+.col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-source {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 11px;
+  padding-left: 34px;
+}
+@media (min-width: 1200px) {
+  .cnqr-mystats .carousel .carousel-control {
+    padding-top: 82px;
+    font-size: 20px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner {
+    width: 360px;
+    height: 180px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner .cnqr-stat-text {
+    font-size: 16px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 {
+    background: url('/static/images/mystats/Travel1/bg_large.png?manualcachekilla=5') no-repeat 0px 50px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-label {
+    position: absolute;
+    left: 4px;
+    top: 93px;
+    line-height: 28px;
+    width: 170px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used {
+    position: absolute;
+    height: 119px;
+    top: 50px;
+    left: 237px;
+    background: url('/static/images/mystats/Travel1/circle_large.png?manualcachekilla=5') no-repeat 0px 0px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas {
+    width: 119px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas.cnqr-bg-white {
+    background-color: white;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-number {
+    position: absolute;
+    line-height: 55px;
+    width: 55px;
+    left: 270px;
+    top: 70px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-label {
+    position: absolute;
+    line-height: 26px;
+    left: 268px;
+    top: 120px;
+    width: 56px;
+    text-transform: uppercase;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-updated-date {
+    left: 0;
+    top: 150px;
+    font-size: 10px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+    position: absolute;
+    text-align: center;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+    position: absolute;
+    text-transform: uppercase;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    position: absolute;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+    width: 100%;
+    position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    text-shadow: 0px 0px 3px #666666, -1px -1px #666666, 1px 1px #666666;
+    filter: dropshadow(color=#666666, offx=2, offy=2);
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend.stat-zero-state,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend.stat-zero-state {
+    color: black;
+    text-shadow: none;
+    filter: none;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-gauge,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge {
+    background-color: white;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+    background-color: white;
+    position: absolute;
+    font-weight: bold;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+    background-image: -webkit-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: -moz-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: -ms-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: -o-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: linear-gradient(to bottom, #209cff 0, #1e69a6 100%);
+    border-bottom: 2px solid #1e69a6;
+    background-color: #1e69a6;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    background-image: -webkit-linear-gradient(left, #383f46 0%, #333333 100%);
+    background-image: -o-linear-gradient(left, #383f46 0%, #333333 100%);
+    background-image: linear-gradient(to right, #383f46 0%, #333333 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff383f46', endColorstr='#ff333333', GradientType=1);
+    border-bottom: 2px solid #383f46;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge-diff {
+    background-color: #F4A900;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+    top: 50px;
+    left: 240px;
+    line-height: 42px;
+    width: 120px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+    line-height: 18px;
+    top: 90px;
+    left: 240px;
+    width: 120px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    top: 60px;
+    width: 90px;
+    height: 98px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+    top: 68px;
+    line-height: 20px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+    width: 94px;
+    top: 155px;
+    font-size: 15px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year {
+    left: 10px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+    left: 130px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+    left: 10px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    left: 130px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-updated-date {
+    left: 240px;
+    top: 150px;
+    font-size: 10px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer {
+    background: url('/static/images/sprite-home-20150618.png') no-repeat 0 -70px;
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 16px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer .stat-title {
+    background: #ffffff url('/static/images/sprite-home-20150618.png') no-repeat right 1px;
+    margin-left: 20px;
+    line-height: 40px;
+    padding-left: 13px;
+    font-size: 16px;
+    padding-right: 60px;
+    font-weight: bold;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .cnqr-stat-text {
+    padding-bottom: 15px;
+    padding-left: 32px;
+    font-size: 14px;
+  }
+  .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-source {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 11px;
+    padding-left: 34px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 {
+    background: url('/static/images/mystats/Travel1/bg_large.png?manualcachekilla=5') no-repeat 0px 50px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-label {
+    position: absolute;
+    left: 4px;
+    top: 93px;
+    line-height: 28px;
+    width: 170px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used {
+    position: absolute;
+    height: 119px;
+    top: 50px;
+    left: 237px;
+    background: url('/static/images/mystats/Travel1/circle_large.png?manualcachekilla=5') no-repeat 0px 0px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas {
+    width: 119px;
+    background-color: transparent;
+    background-image: none;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-used.stat-canvas.cnqr-bg-white {
+    background-color: white;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-number {
+    position: absolute;
+    line-height: 55px;
+    width: 55px;
+    left: 270px;
+    top: 70px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-trips-label {
+    position: absolute;
+    line-height: 26px;
+    left: 268px;
+    top: 120px;
+    width: 56px;
+    text-transform: uppercase;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-travel-1 .stat-updated-date {
+    left: 0;
+    top: 150px;
+    font-size: 10px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+    position: absolute;
+    text-align: center;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+    position: absolute;
+    text-transform: uppercase;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    position: absolute;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+    width: 100%;
+    position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    text-shadow: 0px 0px 3px #666666, -1px -1px #666666, 1px 1px #666666;
+    filter: dropshadow(color=#666666, offx=2, offy=2);
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend.stat-zero-state,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend.stat-zero-state {
+    color: black;
+    text-shadow: none;
+    filter: none;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-gauge,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge {
+    background-color: white;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+    background-color: white;
+    position: absolute;
+    font-weight: bold;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+    background-image: -webkit-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: -moz-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: -ms-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: -o-linear-gradient(top, #209cff 0, #1e69a6 100%);
+    background-image: linear-gradient(to bottom, #209cff 0, #1e69a6 100%);
+    border-bottom: 2px solid #1e69a6;
+    background-color: #1e69a6;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    background-image: -webkit-linear-gradient(left, #383f46 0%, #333333 100%);
+    background-image: -o-linear-gradient(left, #383f46 0%, #333333 100%);
+    background-image: linear-gradient(to right, #383f46 0%, #333333 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff383f46', endColorstr='#ff333333', GradientType=1);
+    border-bottom: 2px solid #383f46;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-gauge-diff {
+    background-color: #F4A900;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-precent {
+    top: 50px;
+    left: 240px;
+    line-height: 42px;
+    width: 120px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-increase {
+    line-height: 18px;
+    top: 90px;
+    left: 240px;
+    width: 120px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    top: 60px;
+    width: 90px;
+    height: 98px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer .stat-spend,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer .stat-spend {
+    top: 68px;
+    line-height: 20px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year,
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+    width: 94px;
+    top: 155px;
+    font-size: 15px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year {
+    left: 10px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year {
+    left: 130px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-last-year-outer {
+    left: 10px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-this-year-outer {
+    left: 130px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-expense-1 .stat-updated-date {
+    left: 240px;
+    top: 150px;
+    font-size: 10px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer {
+    background: url('/static/images/sprite-home-20150618.png') no-repeat 0 -70px;
+    text-align: left;
+    margin-top: 10px;
+    padding-bottom: 16px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-title-outer .stat-title {
+    background: #ffffff url('/static/images/sprite-home-20150618.png') no-repeat right 1px;
+    margin-left: 20px;
+    line-height: 40px;
+    padding-left: 13px;
+    font-size: 16px;
+    padding-right: 60px;
+    font-weight: bold;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .cnqr-stat-text {
+    padding-bottom: 15px;
+    padding-left: 32px;
+    font-size: 14px;
+  }
+  .col-md-12 .col-md-12 .cnqr-mystats .carousel .cnqr-mystat-outer .cnqr-mystat-inner.cnqr-mystat-factoid .stat-source {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 11px;
+    padding-left: 34px;
+  }
+}
+.cnqr-tour-anchor {
+  position: absolute;
+  background: url("/static/images/Green_Dot.png") no-repeat;
+  width: 64px;
+  height: 64px;
+  z-index: 1000;
+  color: #3a7827;
+}
+.cnqr-tourtip {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.cnqr-tourtip #otPopupDialogContents {
+  border-top: 0;
+}
+.cnqr-tourtip,
+.cnqr-popover-tourtip {
+  width: 600px;
+}
+.cnqr-tourtip .cnqr-tourtip-contents,
+.cnqr-popover-tourtip .cnqr-tourtip-contents {
+  padding: 16px;
+}
+.cnqr-tourtip .cnqr-tourtip-contents .lead,
+.cnqr-popover-tourtip .cnqr-tourtip-contents .lead {
+  margin-top: 16px;
+}
+.cnqr-tourtip .cnqr-tourtip-contents .btn-toolbar,
+.cnqr-popover-tourtip .cnqr-tourtip-contents .btn-toolbar {
+  margin-top: 32px;
+}
+.cnqr-tourtip .cnqr-tourtip-contents .btn-toolbar .cnqr-showtips,
+.cnqr-popover-tourtip .cnqr-tourtip-contents .btn-toolbar .cnqr-showtips {
+  padding-top: 8px;
+}
+.cnqr-tourtip .cnqr-tourtip-contents .btn-toolbar .cnqr-showtips label,
+.cnqr-popover-tourtip .cnqr-tourtip-contents .btn-toolbar .cnqr-showtips label {
+  font-size: 13px;
+  margin-left: 3px;
+}
+#outertourTipPopup {
+  /************************************************************
+	!important is used here to overrides popup inline styles.
+	************************************************************/
+}
+#outertourTipPopup .popuptourtip {
+  border: 0 none !important;
+  background-color: transparent !important;
+  height: auto  !important;
+  width: auto  !important;
+}
+#outertourTipPopup .popuptourtip #otPopupDialogContents {
+  border: 0 none !important;
+  background-color: transparent !important;
+}
+#outertourTipPopup .popuptourtip .cnqr-tourstart-content {
+  top: 0;
+  left: 10px;
+}
+#outertourTipPopup .popuptourtip .cnqr-tourstart-content .cnqr-tourtip {
+  width: 750px;
+  padding: 8px;
+}
+a.cnqr-tourstart-btn {
+  position: relative;
+  left: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 2px 5px 2px;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+a.cnqr-tourstart-btn:before,
+a.cnqr-tourstart-btn:after {
+  content: "\00a0";
+  position: absolute;
+  top: 0;
+  display: block;
+  background: #ffffff;
+  margin: 0;
+  padding: 2px 0 2px 0;
+  overflow: hidden;
+  width: 16px;
+  line-height: 18px;
+  color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+a.cnqr-tourstart-btn:before {
+  left: -0.75em;
+  border-right: 0;
+  transform: skew(20deg, 0deg);
+  border-bottom-left-radius: 4px;
+}
+a.cnqr-tourstart-btn:after {
+  right: -0.75em;
+  border-left: 0;
+  transform: skew(-20deg, 0deg);
+  border-bottom-right-radius: 4px;
+}
+a.cnqr-tourstart-btn.cnqr-expanded {
+  line-height: 19px;
+}
+a.cnqr-tourstart-btn.cnqr-expanded:before,
+a.cnqr-tourstart-btn.cnqr-expanded:after {
+  line-height: 19px;
+  padding: 0;
+}
+a.cnqr-tourstart-btn.cnqr-expanded .icon-arrow-2-s:before {
+  content: "\e02b";
+}
+a.cnqr-tourstart-btn .icon-arrow-2-s {
+  padding-left: 3px;
+}
+.oldIE a.cnqr-tourstart-btn {
+  padding: 1px 8px 2px;
+}
+.oldIE a.cnqr-tourstart-btn:before,
+.oldIE a.cnqr-tourstart-btn:after {
+  display: none;
+}
+.oldIE .cnqr-tourtip .btn-toolbar label,
+.oldIE .cnqr-popover-tourtip .btn-toolbar label {
+  max-width: none;
+}
+.cnqr-app-content h2,
+.cnqr-app-content .h2 {
+  margin: 0 0 20px 0;
+}
+.quicktasks.container {
+  overflow: visible;
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: -moz-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: -ms-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: -o-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: linear-gradient(to bottom, #383f46 50%, #f9f9f9 50%);
+}
+.quicktasks.container a:hover {
+  text-decoration: none;
+}
+.quicktasks.container > .cnqr-inner {
+  display: table;
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: #ffffff;
+  border: 1px solid #e2e3e3;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-box-shadow: 0px 1px rgba(153, 152, 157, 0.85);
+  box-shadow: 0px 1px rgba(153, 152, 157, 0.85);
+}
+.quicktasks.container > .cnqr-inner .progress {
+  height: 4px;
+  margin: 4px 8px;
+}
+.quicktasks.container > .cnqr-inner .progress .progress-bar {
+  background-color: #999ca0;
+  width: 100%;
+}
+.progress-striped .quicktasks.container > .cnqr-inner .progress .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.quicktasks.container .title {
+  height: 105px;
+  padding-top: 8px;
+}
+.quicktasks.container .title > a .icon-logotype {
+  font-size: 52px;
+  color: #2077bd;
+}
+.quicktasks.container .title small {
+  display: block;
+  overflow: hidden;
+  max-height: 36px;
+  margin-top: 4px;
+  font-family: 'OpenSans-Light', sans-serif;
+  font-size: 19.2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.quicktasks.container .nav.nav-pills {
+  margin-bottom: 0;
+  padding: 2px 0;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask {
+  outline: none;
+  background: url('/static/images/sprite-home-20150618.png') no-repeat 0 -168px;
+  width: 106px;
+  padding-left: 6px;
+  margin-left: 5px;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask .dropdown-menu {
+  margin-top: 0;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask:hover .dropdown-menu {
+  display: block;
+  z-index: 1000;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a.cnqr-outer {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+  height: 105px;
+  width: 100%;
+  font: normal normal 300 14px/17px "Helvetica Neue", Helvetica, 'Segoe UI', Arial, sans-serif;
+  display: table;
+  color: #333333;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a.cnqr-outer .cnqr-inner {
+  text-align: center;
+  padding: 16px 10px 0;
+  vertical-align: top;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a.cnqr-outer .cnqr-inner .count {
+  font: normal normal normal 25px/35px 'Oswald-Regular', sans-serif;
+  height: 35px;
+  vertical-align: middle;
+  padding: 0;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a.cnqr-outer .cnqr-inner .count > i {
+  margin-top: 10px;
+  position: absolute;
+  font-size: 14px;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a.cnqr-outer .cnqr-inner .action {
+  font: normal normal normal 15px/16px;
+  line-height: 35px;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a.cnqr-outer.cnqr-tourstart {
+  color: #3a7827;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #3a7827;
+  font-weight: bolder;
+}
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask a:hover,
+.quicktasks.container .nav.nav-pills li.cnqr-quicktask:focus a {
+  background-color: #ebf7ff;
+  color: #333333;
+}
+.sidebar {
+  background-color: #ffffff;
+  border: 1px solid #c0c2c4;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0;
+}
+.recentSearches.cnqr-inner,
+.upcomingTrips.cnqr-inner {
+  padding: 0 16px 0 16px;
+}
+.recentSearches H2 {
+  margin-top: 16px;
+}
+.recentSearches .cnqr-tiles > li {
+  margin-right: 0;
+  width: 100%;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner {
+  padding: 5px 0 10px 0;
+  min-height: auto;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner:before,
+.recentSearches .cnqr-tiles > li .cnqr-inner:after {
+  content: " ";
+  display: table;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner:after {
+  clear: both;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner .iconContainer {
+  float: left;
+  width: 25px;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner .desc {
+  float: left;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner .desc a {
+  color: #1e69a6;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner .desc a:hover {
+  color: #2379bf;
+}
+.recentSearches .cnqr-tiles > li .cnqr-inner .desc .cnqr-date {
+  color: #72777b;
+  font-size: 12px;
+}
+.cnqr-upcomingtripswide .upcomingTrips {
+  padding: 0;
+}
+.cnqr-upcomingtripswide .upcomingTrips H2 a {
+  background-image: none;
+}
+.cnqr-upcomingtripswide .upcomingTrips .cnqr-tiles > li {
+  width: 50%;
+  padding: 8px 8px 8px 0;
+}
+.cnqr-upcomingtripswide .upcomingTrips .cnqr-tiles > li:first-child {
+  padding-top: 8px;
+}
+.cnqr-upcomingtripswide .upcomingTrips .cnqr-tiles > li.cnqr-even {
+  padding-right: 0;
+  padding-left: 8px;
+}
+.upcomingTrips .cnqr-worktozero {
+  border: 1px solid #c0c2c4;
+}
+.upcomingTrips H2 a {
+  color: #333333;
+  display: block;
+  background: url("/static/images/sprite-home-20150618.png") no-repeat right -281px;
+  margin-right: 5px;
+}
+.upcomingTrips H2 a:hover {
+  margin-right: 0;
+  text-decoration: none;
+}
+.upcomingTrips .cnqr-tiles {
+  overflow: visible;
+  background-color: transparent;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.upcomingTrips .cnqr-tiles > li {
+  width: 100%;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  padding-top: 32px;
+}
+.upcomingTrips .cnqr-tiles > li:before,
+.upcomingTrips .cnqr-tiles > li:after {
+  content: " ";
+  display: table;
+}
+.upcomingTrips .cnqr-tiles > li:after {
+  clear: both;
+}
+.upcomingTrips .cnqr-tiles > li:first-child {
+  padding-top: 16px;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer {
+  width: 100%;
+  padding: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #c0c2c4;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer > a .cnqr-inner {
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer > a .cnqr-inner > .overflow {
+  height: 20px;
+  overflow: hidden;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer > a .cnqr-inner > .overflow.cnqr-bold {
+  color: #1e69a6;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer > a .cnqr-inner > .overflow.double-line {
+  height: 40px;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer > a .cnqr-date {
+  font: normal normal normal 16px 'Oswald-Regular', sans-serif;
+  background-color: #b9c2c9;
+  cursor: pointer;
+  color: #333333;
+  float: left;
+  white-space: nowrap;
+  min-width: 62px;
+  padding: 8px;
+  margin: -10px 8px 6px 0;
+  text-transform: uppercase;
+  line-height: 1.3;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom: 1px solid #383f46;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer > a:hover .cnqr-date {
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .icons {
+  padding: 0 10px;
+  float: left;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .icons i {
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  float: left;
+  color: #ffffff;
+  background-color: #50565c;
+  display: block;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  padding: 2px;
+  margin-right: 4px;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info {
+  float: left;
+  padding-right: 6px;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info > a {
+  cursor: pointer;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info > a:hover {
+  color: #2379bf;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info .pulldown-details {
+  position: absolute;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  margin-top: 2px;
+  margin-left: 16px;
+  min-width: 200px;
+  padding: 4px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  z-index: 1050;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info .pulldown-details > div {
+  padding: 8px;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info .pulldown-details .cnqr-inner {
+  width: 100%;
+  display: inline-block;
+}
+.upcomingTrips .cnqr-tiles > li .cnqr-outer .info .pulldown-details .cnqr-inner hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.cnqr-worktozero {
+  background-color: #ffffff;
+  padding: 8px;
+}
+.carousel .carousel-indicators li {
+  background-color: #000000;
+}
+.carousel .carousel-indicators li.active {
+  background-color: #c0c2c4;
+}
+.carousel .carousel-control {
+  font-size: 30px;
+  width: 32px;
+}
+.cnqr-mytasks .cnqr-emptytasktile > div {
+  border-top: 1px solid #999ca0;
+  padding-top: 8px;
+}
+.cnqr-mytasks .cnqr-emptytasktile > div .icon-messaging-success {
+  padding-top: 36px;
+  font-size: 60px;
+}
+.cnqr-mytasks .cnqr-emptytasktile > div .icon-messaging-success:before {
+  background-color: #c0c2c4;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles {
+  max-height: 261px;
+  overflow: hidden;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles li {
+  width: 100%;
+  border-top: 1px solid #999ca0;
+  height: 51px;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles li.cnqr-tile-6 {
+  display: none;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles li a > div {
+  display: table-cell;
+  padding-top: 4px;
+  width: 100%;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles li a > div.cnqr-count {
+  display: block;
+  padding-top: 16px;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles li a > div.cnqr-date {
+  min-width: 40px;
+  width: 40px;
+  padding-right: 8px;
+}
+.cnqr-mytasks ul.cnqr-tiles ul.cnqr-tiles li a > div .overflow {
+  height: 20px;
+  overflow: hidden;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 .cnqr-emptytasktile {
+  text-align: center;
+  min-height: 130px;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 .cnqr-emptytasktile > div {
+  border-top: 0;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li {
+  width: 50%;
+  height: 56px;
+  padding: 0 16px 16px 16px;
+  border-right: 1px solid #c0c2c4;
+  border-top: 0;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li a > div {
+  padding-top: 8px;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li a > div.cnqr-count {
+  padding-top: 16px;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li.cnqr-50-last {
+  border-right: 0;
+}
+.cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li.cnqr-tile-6 {
+  display: block;
+}
+.cnqr-noproducts {
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid #c0c2c4;
+}
+.newsandnotes > .cnqr-inner {
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid #c0c2c4;
+}
+.newsandnotes > .cnqr-inner a {
+  color: #1e69a6;
+}
+.newsandnotes > .cnqr-inner.minimized {
+  max-height: 145px;
+  overflow: hidden;
+  display: block;
+  -webkit-box-shadow: "inset 0 -12px 1px -2px rgba(0, 0, 0, 0.02), inset 0 -8px 1px -2px rgba(0, 0, 0, 0.04), inset 0 -4px 1px -2px rgba(0, 0, 0, 0.06)";
+  box-shadow: "inset 0 -12px 1px -2px rgba(0, 0, 0, 0.02), inset 0 -8px 1px -2px rgba(0, 0, 0, 0.04), inset 0 -4px 1px -2px rgba(0, 0, 0, 0.06)";
+}
+.newsandnotes > .cnqr-inner .gdsnews {
+  margin: 0 0 16px;
+}
+.newsandnotes .cnqr-expenseinfo-display > hr {
+  margin: 0;
+  border: none 0;
+  border-top: 1px solid #c0c2c4;
+  height: 1px;
+}
+.newsandnotes .show-more {
+  border-top: 1px solid #999ca0;
+  margin-top: -1px;
+  margin-bottom: -27px;
+}
+.newsandnotes .show-more:link,
+.newsandnotes .show-more:visited,
+.newsandnotes .show-more:active {
+  font-weight: bold;
+  font-size: 12px;
+  color: #333333;
+  display: block;
+  outline: 0;
+  text-align: right;
+  padding: 0;
+  text-decoration: none;
+}
+.newsandnotes .show-more:link:before,
+.newsandnotes .show-more:visited:before,
+.newsandnotes .show-more:active:before,
+.newsandnotes .show-more:link:after,
+.newsandnotes .show-more:visited:after,
+.newsandnotes .show-more:active:after {
+  content: " ";
+  display: table;
+}
+.newsandnotes .show-more:link:after,
+.newsandnotes .show-more:visited:after,
+.newsandnotes .show-more:active:after {
+  clear: both;
+}
+.newsandnotes .show-more:link .cnqr-inner,
+.newsandnotes .show-more:visited .cnqr-inner,
+.newsandnotes .show-more:active .cnqr-inner {
+  display: inline-block;
+  background-color: #c0c2c4;
+  margin: 0;
+  padding: 5px 15px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.newsandnotes .show-more:hover {
+  color: #50565c;
+}
+.cnqr-tiles.task {
+  overflow: visible;
+}
+.cnqr-tiles.task:before,
+.cnqr-tiles.task:after {
+  content: " ";
+  display: table;
+}
+.cnqr-tiles.task:after {
+  clear: both;
+}
+.cnqr-tiles.task.cnqr-count-1 > li {
+  width: 100%;
+}
+.cnqr-tiles.task.cnqr-count-2 > li {
+  width: 50%;
+}
+.cnqr-tiles.task.cnqr-count-2 > li .cnqr-inner {
+  min-height: 275px;
+}
+.cnqr-tiles.task.cnqr-count-3 > li .cnqr-inner {
+  min-height: 275px;
+}
+.cnqr-tiles.task.cnqr-count-2.cnqr-short > li .cnqr-inner,
+.cnqr-tiles.task.cnqr-count-3.cnqr-short > li .cnqr-inner {
+  min-height: 170px;
+}
+.cnqr-tiles.task > li {
+  width: 33.3333%;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.cnqr-tiles.task > li:first-child {
+  padding-left: 0;
+}
+.cnqr-tiles.task > li.cnqr-last {
+  padding-right: 0;
+}
+.cnqr-tiles.task > li h3 {
+  background-color: #ffffff;
+  border-top: 1px solid #c0c2c4;
+  border-left: 1px solid #c0c2c4;
+  border-right: 1px solid #c0c2c4;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.cnqr-tiles.task > li h3:before,
+.cnqr-tiles.task > li h3:after {
+  content: " ";
+  display: table;
+}
+.cnqr-tiles.task > li h3:after {
+  clear: both;
+}
+.cnqr-tiles.task > li h3 > a {
+  background: url("/static/images/sprite-home-20150618.png") no-repeat right -268px;
+}
+.cnqr-tiles.task > li h3 > a,
+.cnqr-tiles.task > li h3 > span {
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI Semibold", sans-serif;
+  display: block;
+  margin: 0 10px 7px 13px;
+  line-height: 18px;
+  padding: 15px 17px 0 0;
+}
+.cnqr-tiles.task > li h3 > a .count,
+.cnqr-tiles.task > li h3 > span .count {
+  font: normal normal bold 36px/47px 'Oswald-Regular', sans-serif;
+  background-color: #1e69a6;
+  color: #ffffff;
+  float: left;
+  margin: -19px 8px 6px 0;
+  line-height: 64px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  text-shadow: 0 -1px 1px #72777b;
+  -webkit-box-shadow: 0px 1px rgba(171, 130, 51, 0.8);
+  box-shadow: 0px 1px rgba(171, 130, 51, 0.8);
+}
+.cnqr-tiles.task > li h3 > a .count .progress,
+.cnqr-tiles.task > li h3 > span .count .progress {
+  height: 4px;
+  margin: -8px 8px;
+}
+.cnqr-tiles.task > li h3 > a .count .progress .progress-bar,
+.cnqr-tiles.task > li h3 > span .count .progress .progress-bar {
+  background-color: #e2e3e3;
+  width: 90%;
+}
+.progress-striped .cnqr-tiles.task > li h3 > a .count .progress .progress-bar,
+.progress-striped .cnqr-tiles.task > li h3 > span .count .progress .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.cnqr-tiles.task > li h3 > a .count > i,
+.cnqr-tiles.task > li h3 > span .count > i {
+  font-size: 18px;
+  display: inline;
+  margin-top: 23px;
+  float: right;
+  padding-right: 4px;
+}
+.cnqr-tiles.task > li h3 > a:hover,
+.cnqr-tiles.task > li h3 > span:hover {
+  text-decoration: none;
+  margin-right: 5px;
+  padding-right: 23px;
+}
+.cnqr-tiles.task > li h3 > a:hover span.count,
+.cnqr-tiles.task > li h3 > span:hover span.count {
+  background-color: #2379bf;
+}
+.cnqr-tiles.task > li .cnqr-inner {
+  background-color: #ffffff;
+  border-left: 1px solid #c0c2c4;
+  border-right: 1px solid #c0c2c4;
+  border-bottom: 1px solid #c0c2c4;
+  padding: 0 13px 13px 13px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.cnqr-tiles.task > li .cnqr-inner:before,
+.cnqr-tiles.task > li .cnqr-inner:after {
+  content: " ";
+  display: table;
+}
+.cnqr-tiles.task > li .cnqr-inner:after {
+  clear: both;
+}
+.cnqr-tiles.task > li .table-condensed {
+  width: 100%;
+}
+.cnqr-tiles.task > li .table-condensed tr {
+  border-top: 1px solid #999ca0;
+}
+.cnqr-tiles.task > li .table-condensed td {
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 0 11px 0;
+}
+.cnqr-tiles.task > li .table-condensed td .overflow {
+  height: 16px;
+}
+.cnqr-tiles.task > li .table-condensed td.icon {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.cnqr-tiles.task > li .table-condensed td:first-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.cnqr-section {
+  margin-bottom: 32px;
+}
+.cnqr-loading-placeholder {
+  border: 1px solid #c0c2c4;
+  background: #ffffff url("/static/images/legacy/processing_small.gif") no-repeat center center !important;
+}
+.cnqr-loading-placeholder.cnqr-under-readmore {
+  margin-top: 48px !important;
+}
+.cnqr-loading-placeholder.cnqr-quicktasks-loading {
+  min-height: 100px;
+}
+.cnqr-loading-placeholder.cnqr-mytasks-loading {
+  margin-bottom: 16px;
+  min-height: 400px;
+}
+.cnqr-loading-placeholder.cnqr-mystats-loading {
+  margin-bottom: 16px;
+  min-height: 160px;
+  display: none;
+}
+.cnqr-loading-placeholder.cnqr-upcomingtrips-loading {
+  min-height: 200px;
+}
+#sidebar1 .upcomingTrips.cnqr-inner {
+  padding: 20px 0 20px 0;
+}
+@media (max-width: 767px) {
+  .cnqr-upcomingtripswide .upcomingTrips .cnqr-tiles > li {
+    width: 100%;
+    padding: 16px 0 0 0;
+  }
+  .cnqr-upcomingtripswide .upcomingTrips .cnqr-tiles > li.cnqr-even {
+    padding-left: 0;
+  }
+  .recentSearches.cnqr-inner {
+    padding: 0;
+  }
+  .recentSearches .cnqr-tiles > li {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .recentSearches .cnqr-tiles > li .cnqr-inner {
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .recentSearches.cnqr-inner {
+    padding: 0;
+  }
+  .recentSearches .cnqr-tiles.task > li:nth-child(3n+3) {
+    padding-right: 0;
+  }
+  .recentSearches .cnqr-tiles > li {
+    width: 234px;
+    margin-right: 16px;
+  }
+  .recentSearches .cnqr-tiles > li .cnqr-inner {
+    padding: 10px;
+  }
+  .recentSearches .cnqr-tiles > li:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .col-md-8 .cnqr-tiles.task > li h3 > a,
+  .col-md-8 .cnqr-tiles.task > li h3 > span {
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-right: 35px;
+    min-height: 38px;
+  }
+  .col-md-8 .cnqr-tiles.task > li h3 > a span.count,
+  .col-md-8 .cnqr-tiles.task > li h3 > span span.count,
+  .col-md-8 .cnqr-tiles.task > li h3 > a div.count,
+  .col-md-8 .cnqr-tiles.task > li h3 > span div.count {
+    font-weight: normal;
+    margin-top: -8px;
+    line-height: 47px;
+    font-size: 26px;
+    width: 50px;
+    height: 47px;
+  }
+  .col-md-8 .cnqr-tiles.task > li h3 > a span.count .progress,
+  .col-md-8 .cnqr-tiles.task > li h3 > span span.count .progress,
+  .col-md-8 .cnqr-tiles.task > li h3 > a div.count .progress,
+  .col-md-8 .cnqr-tiles.task > li h3 > span div.count .progress {
+    margin-top: -5px;
+  }
+  .col-md-8 .cnqr-tiles.task > li h3 > a span.count > i,
+  .col-md-8 .cnqr-tiles.task > li h3 > span span.count > i,
+  .col-md-8 .cnqr-tiles.task > li h3 > a div.count > i,
+  .col-md-8 .cnqr-tiles.task > li h3 > span div.count > i {
+    margin-top: 16px;
+    font-size: 14px;
+    padding-right: 1px;
+  }
+  .col-md-8 .cnqr-tiles.task > li h3 > a:hover,
+  .col-md-8 .cnqr-tiles.task > li h3 > span:hover {
+    padding-right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li {
+    width: 33.3333%;
+  }
+  .cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li.cnqr-50-last {
+    border-right: 1px solid #c0c2c4;
+  }
+  .cnqr-mytasks ul.cnqr-tiles.cnqr-count-1 ul.cnqr-tiles li.cnqr-30-last {
+    border-right: 0;
+  }
+}
+.oldIE .quicktasks {
+  background: #f9f9f9 url("/static/images/oldIE/background-quicktasks.png?manualcachekilla=20140408") repeat-x top left;
+}
+.oldIE .upcomingTrips .cnqr-tiles > li .icons i {
+  background-color: #ffffff;
+  color: #999ca0;
+}
+.oldIE .upcomingTrips .cnqr-tiles > li .cnqr-date {
+  min-width: 50px!important;
+}
+.oldIE .pulldown-details {
+  border: 1px solid #999ca0;
+}
+#travelPointsBalanceInline,
+#dynamicTravelPointsMessage {
+  overflow: hidden;
+  overflow: auto\9;
+  /*ie8 and below, overflow hidden hides borders*/
+  max-height: 0;
+  -moz-transition: max-height 1s ease-in;
+  -webkit-transition: max-height 1s ease-in;
+  -o-transition: max-height 1s ease-in;
+  transition: max-height 1s ease-in;
+}
+#dynamicTravelPointsMessage {
+  margin: 0 0 8px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #999ca0;
+  font-size: 1.35em;
+  font-weight: 700;
+}
+#dynamicTravelPointsMessage .innerText {
+  padding: 8px;
+}
+#travelPointsBalanceInline {
+  border: 1px solid #A9B8D3;
+  margin-bottom: 8px;
+  border-spacing: 0;
+  width: 100%;
+}
+#travelPointsBalanceInline tbody {
+  display: table;
+  width: 100%;
+}
+#travelPointsBalanceInline th {
+  font-size: 12px;
+  text-align: left;
+  font-weight: 700;
+  vertical-align: middle;
+  padding: 8px;
+}
+#travelPointsBalanceInline td {
+  border: 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: right;
+  padding: 8px 8px;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  background-color: #1e69a6;
+}
+#travelPointsBalanceInline td .pointsText {
+  font-size: 16px;
+  font-weight: 700;
+}
+.multicheckbox {
+  background-color: #ffffff;
+  border: 1px inset;
+  height: 77px;
+  overflow: auto;
+  padding: 2px 0 2px 2px;
+}
+.multicheckbox div label {
+  display: inline;
+}
+.cnqr-theme-11 #travelPointsBalanceInline {
+  border: 1px solid #1e69a6;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-collapse: separate;
+  /*this is required for the border-radius to work*/
+}
+.cnqr-theme-11 #travelPointsBalanceInline th {
+  font-size: 15px;
+  padding: 8px;
+}
+.cnqr-theme-11 #travelPointsBalanceInline td {
+  padding: 8px 8px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cnqr-theme-11 #travelPointsBalanceInline td .pointsText {
+  font-size: 22px;
+}

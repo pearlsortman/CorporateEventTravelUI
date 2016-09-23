@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://rqa3-cb.concurtech.net/common/cliqbook_wait.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Please Wait...</title>
+	<style type="text/css">
+		body, html {
+			cursor: wait;
+			position: relative;
+			height: 100%;
+			width:100%;
+			overflow: hidden;
+			background-color:white;
+		}
+
+		.inner {
+			background: transparent url("/images/concur_process.gif");
+			width: 263px;
+			height: 114px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -58px 0 0 -132px;
+		}
+	</style>
+	<script type="text/javascript">
+		function checkPageVisibility() {
+			// delay http request for image until we are sure this page is visible.
+			var isPageVisible = (parent.document.getElementById("waitIFrame")) ? !(parent.document.getElementById("waitIFrame").style.display == "none") : true;
+
+			if (isPageVisible) {
+				document.getElementById("outer").style.display = "block";
+			} else {
+				window.setTimeout(function () { checkPageVisibility(); }, 1000);
+			}
+		}
+	</script>
+</head>
+	<body onload="checkPageVisibility()">
+		<div id="outer" style="display: none;">
+			<div class="inner"></div>
+		</div>
+	
+</body></html>
